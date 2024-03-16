@@ -22,3 +22,7 @@ class Mouse(PyMouse):
     def move(self, x, y, wait=0):
         super().move(int(x), int(y))
         sleep(wait)
+
+    def press(self, x, y, button=1, wait=0):
+        super().press(int(x), int(y), button)
+        sleep(wait)
