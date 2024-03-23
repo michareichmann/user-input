@@ -41,6 +41,12 @@ class Keys(PyKeyboard):
     def press_up(self, n=1, wait=0):
         self.tap(self.up_key, n=n, wait=wait)
 
+    def press_right(self, n=1, wait=0):
+        self.tap(self.right_key, n=n, wait=wait)
+
+    def press_left(self, n=1, wait=0):
+        self.tap(self.left_key, n=n, wait=wait)
+
     def press_esc(self, n=1, wait=0):
         self.tap(self.escape_key, n=n, wait=wait)
     # endregion
